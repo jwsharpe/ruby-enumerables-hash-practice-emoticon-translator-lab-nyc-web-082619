@@ -3,7 +3,7 @@ require "yaml"
 $emoticons = []
 
 def load_library
-$emoticons = YAML.load_file("../lib/translator.rb")
+$emoticons = YAML.load_file("../lib/emoticons.yml")
 end
 
 $emoticons = load_library()
