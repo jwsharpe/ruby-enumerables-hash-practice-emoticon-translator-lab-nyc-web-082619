@@ -21,8 +21,3 @@ end
 def get_english_meaning(emoticon)
   return $japanese_to_english_meaning_dictionary[emoticon]
 end
-
-
-
-
-load_library()
