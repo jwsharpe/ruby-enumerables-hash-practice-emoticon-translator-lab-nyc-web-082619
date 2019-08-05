@@ -11,11 +11,13 @@ def load_library(file_path)
 end
 
 def get_japanese_emoticon(yaml_file,emoticon)
-
+  dictionary = load_library(yaml_file)
+  dictionary[:get_emoticon][emoticon]
 end
 
 def get_english_meaning(yaml_file, emoticon)
-
+  dictionary = load_library(yaml_file)
+  dictionary[:get_meaning][emoticon]
 end
 
 load_library("./lib/emoticons.yml")
