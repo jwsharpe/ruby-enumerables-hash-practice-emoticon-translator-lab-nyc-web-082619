@@ -5,8 +5,8 @@ def load_library(file_path)
   dictionary_hash = Hash.new
   yaml_hash.each_key do |key|
     dictionary_hash = {
-      get_meaning: {key => yaml_hash[key][1]},
-      get_emoticon: {key => yaml_hash[key]}
+      get_meaning: {yaml_hash[key][1] => key},
+      get_emoticon: {yaml_hash[key][0] => yaml_hash[key][1]}
     }
   end
   return dictionary_hash
