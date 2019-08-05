@@ -22,7 +22,7 @@ def get_english_meaning(emoticon)
   japanese_to_english_meaning_dictionary.default = "I am sorry, I am not sure."
   
   emoticons.each_key do |key|
-    japanese_to_english_meaning_dictionary = {$emoticons[key][1] => key}
+    japanese_to_english_meaning_dictionary = {emoticons[key][1] => key}
   end
   
   return japanese_to_english_meaning_dictionary[emoticon]
