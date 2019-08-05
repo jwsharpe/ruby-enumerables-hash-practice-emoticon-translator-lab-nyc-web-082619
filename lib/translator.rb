@@ -12,7 +12,7 @@ end
 
 def get_japanese_emoticon(yaml_file,emoticon)
   dictionary = load_library(yaml_file)
-  dictionary[:get_emoticon][emoticon] ? dictionary[:get_meaning][emoticon] : "Sorry, that emoticon was not found"
+  dictionary[:get_emoticon][emoticon] ? dictionary[:get_emoticon][emoticon] : "Sorry, that emoticon was not found"
 end
 
 def get_english_meaning(yaml_file, emoticon)
