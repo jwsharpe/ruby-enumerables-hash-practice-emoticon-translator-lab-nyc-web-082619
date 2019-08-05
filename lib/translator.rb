@@ -11,8 +11,8 @@ $japanese_to_english_meaning_dictionary = Hash.new
 $english_to_japanese_dictionary = Hash.new
 
 $emoticons.each_key do |key|
-  $japanese_to_english_meaning_dictionary = {emoticons[key][1] => key}
-  $english_to_japanese_dictionary = {emoticons[key][0] => emoticons[key][1]}
+  $japanese_to_english_meaning_dictionary = {$emoticons[key][1] => key}
+  $english_to_japanese_dictionary = {$emoticons[key][0] => $emoticons[key][1]}
 end
 
 def get_japanese_emoticon(emoticon)
