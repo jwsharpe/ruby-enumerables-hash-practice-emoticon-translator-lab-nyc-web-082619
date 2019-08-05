@@ -3,8 +3,9 @@ require "yaml"
 def load_library(file_path)
   yaml_hash = YAML.load_file(file_path)
   dictionary_hash = Hash.new
-  pp yaml_hash
+
   yaml_hash.each_key do |key|
+    pp key
     dictionary_hash = {
       get_meaning: {yaml_hash[key][1] => key},
       get_emoticon: {yaml_hash[key][0] => yaml_hash[key][1]}
