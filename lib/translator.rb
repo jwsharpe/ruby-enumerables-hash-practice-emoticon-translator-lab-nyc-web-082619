@@ -7,12 +7,12 @@ $emoticons = YAML.load_file('lib/emoticons.yml')
 end
 
 $emoticons = load_library()
-$japanese_to_english_meaning = Hash.new
-$jape = Hash.new
+$japanese_to_english_meaning_dictionary = Hash.new
+$english_to_japanese_dictionary = Hash.new
 
-$emoticons.each do |key, value|
-  $japanese_to_english_dictionary = {value[0] => value[1]}
-  $english_to_japanese_dictionary = {
+$emoticons.each_key do |key|
+  $japanese_to_english_meaning_dictionary = {emoticons[key][1] => key}
+  $english_to_japanese_dictionary = {emoticons[key][0] => emoticons[key][1]}
 
 def get_japanese_emoticon(emoticon)
   
