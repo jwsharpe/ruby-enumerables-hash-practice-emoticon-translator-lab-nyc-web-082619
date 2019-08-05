@@ -16,7 +16,7 @@ def get_japanese_emoticon(yaml_file,emoticon)
   return english_to_japanese_dictionary[emoticon]
 end
 
-def get_english_meaning(emoticon)
+def get_english_meaning(yaml_file, emoticon)
   emoticons = load_library(yaml_file)
   japanese_to_english_meaning_dictionary = Hash.new
   japanese_to_english_meaning_dictionary.default = "I am sorry, I am not sure."
