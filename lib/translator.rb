@@ -9,6 +9,7 @@ def load_library(file_path)
       get_emoticon: key 
     }
   end
+  return dictionary_hash
 end
 
 def get_japanese_emoticon(yaml_file,emoticon)
