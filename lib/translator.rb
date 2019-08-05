@@ -11,7 +11,8 @@ $japanese_to_english_dictionary = Hash.new
 $english_to_japanese_dictionary = Hash.new
 
 $emoticons.each do |key, value|
-  $japanese_to_english_dictionary[value[1] => ]
+  $japanese_to_english_dictionary = {value[0] => value[1]}
+  $english_to_japanese_dictionary = {
 
 def get_japanese_emoticon(emoticon)
   
