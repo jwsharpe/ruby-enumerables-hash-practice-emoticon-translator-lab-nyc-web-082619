@@ -8,7 +8,7 @@ def load_library(file_path)
   yaml_hash.each_key do |key|
     pp key
     dictionary_hash[:get_meaning].push({yaml_hash[key][1] => key})
-    
+    dictionary_hash[:get_emoticon].push({yaml_hash[key][0] => yaml_hash[key][1]})
   end
   pp dictionary_hash
 end
