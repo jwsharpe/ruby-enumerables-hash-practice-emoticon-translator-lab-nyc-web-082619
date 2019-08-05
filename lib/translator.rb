@@ -7,8 +7,8 @@ $emoticons = YAML.load_file('lib/emoticons.yml')
 end
 
 $emoticons = load_library()
-$japanese_to_english_dictionary = Hash.new
-$english_to_japanese_dictionary = Hash.new
+$japanese_to_english_meaning = Hash.new
+$jape = Hash.new
 
 $emoticons.each do |key, value|
   $japanese_to_english_dictionary = {value[0] => value[1]}
