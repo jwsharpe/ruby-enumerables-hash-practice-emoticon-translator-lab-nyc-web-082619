@@ -12,4 +12,7 @@ def get_english_meaning(emoticon)
   
 end
 
+
+
+
 load_library()
